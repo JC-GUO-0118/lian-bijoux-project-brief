@@ -405,7 +405,41 @@ dialog::backdrop {background:#10254199;backdrop-filter:blur(2px)}
 .learning-flow strong {display:block;font-size:16px}.learning-flow p {font-size:14px;line-height:1.85;margin-top:9px;color:var(--muted)}
 @media(max-width:1100px){.learning-flow{grid-template-columns:1fr 1fr}.learning-flow>div:nth-child(2){border-right:0}.learning-flow>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:700px){.market-grid,.contact-grid{grid-template-columns:1fr;gap:17px}.section-heading h3{font-size:22px}.handoff-detail>summary{padding:16px 14px;gap:9px;align-items:flex-start}.handoff-detail>summary>small{display:none}.handoff-detail>summary:after{margin-left:auto}.handoff-content{padding:19px 16px}.record-fields{padding:16px}.learning-flow{grid-template-columns:1fr}.learning-flow>div{border-right:0;border-bottom:1px solid var(--line);padding:19px}.learning-flow>div:last-child{border-bottom:0}.market-grid>div{padding:17px}.market-brief,.handoff-kit{margin-top:25px}.section-heading p{font-size:15px}}
+.map-heading {margin-bottom:26px}.map-heading .lead {max-width:none}
+.project-mindmap {display:grid;grid-template-columns:minmax(0,1fr) 44px 186px 44px minmax(0,1fr);align-items:stretch;position:relative;margin:12px 0 26px}
+.mind-root {grid-column:3;grid-row:1;align-self:center;position:relative;background:var(--navy);color:#fff;padding:25px 17px;text-align:center}
+.mind-root>span {font-size:10px;letter-spacing:.1em;color:#bbd0e9;white-space:nowrap}
+.mind-root>strong {display:block;font-size:24px;line-height:1.55;margin:13px 0 10px;letter-spacing:-.03em}
+.mind-root p {font-size:13px;color:#c3d2e5;margin:0}
+.mind-root button {background:transparent;color:white;border:0;border-top:1px solid #516986;width:100%;font-size:13px;padding:15px 0 0;margin-top:19px;line-height:1.7}
+.mind-root::before,.mind-root::after {content:'';position:absolute;top:50%;width:22px;border-top:1px solid #9fb4cd;pointer-events:none}
+.mind-root::before {right:100%}.mind-root::after {left:100%}
+.mind-branches {display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:14px;position:relative}
+.mind-left {grid-column:1;grid-row:1}.mind-right {grid-column:5;grid-row:1}
+.mind-branches::before {content:'';position:absolute;top:calc((100% - 28px)/6);bottom:calc((100% - 28px)/6);border-left:1px solid #9fb4cd;pointer-events:none}
+.mind-left::before {right:-22px}.mind-right::before {left:-22px}
+.mind-node {position:relative;border:1px solid var(--line);background:#fff;padding:16px 18px 13px;min-width:0}
+.mind-node::after {content:'';position:absolute;top:50%;width:22px;border-top:1px solid #9fb4cd;pointer-events:none}
+.mind-left .mind-node::after {left:100%}.mind-right .mind-node::after {right:100%}
+.mind-topic {display:flex;align-items:center;gap:9px;width:100%;padding:0;border:0;background:none;text-align:left;line-height:1.5}
+.mind-topic>span:first-child {font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}
+.mind-topic>strong {font-size:16px;font-weight:700;color:var(--ink);flex:1}
+.mind-topic>span:last-child {font-size:14px;color:var(--accent)}
+.mind-topic:hover strong,.mind-extra:hover {color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.mind-node ul {margin:10px 0 0;padding-left:16px;font-size:14px;line-height:1.8;color:var(--muted)}
+.mind-node li+li {margin-top:3px}.mind-node #map-stock,.mind-node #map-market {color:var(--ink);font-weight:500}
+.mind-extra {border:0;background:none;color:var(--accent);font-size:12px;padding:7px 0 0;line-height:1.7}
+.map-gates {display:flex;align-items:center;justify-content:center;gap:12px 17px;flex-wrap:wrap;background:var(--pale);border-top:2px solid var(--navy);padding:17px 20px;font-size:14px}
+.map-gates>strong {font-size:12px;color:var(--muted);font-weight:500;margin-right:6px}.map-gates i {font-style:normal;color:#7892b3}
+.map-original {margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.map-original>summary {cursor:pointer;font-size:14px;color:var(--accent)}
+.map-original .hero {padding-top:27px}
+@media(min-width:1500px){.mind-node{padding:20px 22px}.mind-node ul{font-size:15px}.mind-topic>strong{font-size:17px}}
+@media(max-width:1150px){.project-mindmap{grid-template-columns:minmax(0,1fr) 32px 156px 32px minmax(0,1fr)}.mind-root{padding:23px 12px}.mind-root>span{font-size:9px}.mind-root>strong{font-size:22px}.mind-root::before,.mind-root::after,.mind-node::after{width:16px}.mind-left::before{right:-16px}.mind-right::before{left:-16px}.mind-node{padding:15px 13px}.mind-topic>strong{font-size:15px}.mind-topic{gap:7px}.mind-node ul{font-size:14px}}
+@media(max-width:1000px){.project-mindmap{grid-template-columns:1fr 1fr;gap:23px 26px}.mind-root{grid-column:1/-1;grid-row:1;justify-self:center;width:270px;padding:19px 22px}.mind-root>span{font-size:11px}.mind-root>strong{font-size:24px;margin:7px 0}.mind-root>strong br{display:none}.mind-root button{padding-top:10px;margin-top:12px}.mind-root::before{display:none}.mind-root::after{left:50%;top:100%;height:23px;width:0;border-top:0;border-left:1px solid #9fb4cd}.mind-left{grid-column:1;grid-row:2}.mind-right{grid-column:2;grid-row:2}.mind-branches{border-left:1px solid #9fb4cd;padding-left:18px;gap:14px;margin-left:0}.mind-branches::before{display:none}.mind-left .mind-node::after,.mind-right .mind-node::after{left:auto;right:100%;width:18px;top:28px}.mind-topic>strong{font-size:16px}}
+@media(max-width:650px){.project-mindmap{grid-template-columns:minmax(0,1fr);gap:0;margin-top:0}.mind-root{grid-column:1;grid-row:1;justify-self:start;margin:0 0 22px;width:100%;text-align:left;padding:20px 22px}.mind-root>span{font-size:11px}.mind-root>strong{font-size:24px}.mind-root>strong br{display:none}.mind-root p{font-size:14px}.mind-root button{text-align:left;font-size:14px}.mind-root::after{left:12px;height:22px}.mind-left,.mind-right{grid-column:1;grid-row:auto;margin-left:12px;padding-left:20px}.mind-left{padding-bottom:14px}.mind-node{padding:17px 16px}.mind-left .mind-node::after,.mind-right .mind-node::after{width:20px}.mind-branches{grid-template-rows:none}.mind-node ul{font-size:14px}.mind-extra{font-size:13px}.map-gates{justify-content:flex-start;gap:8px 10px;padding:17px;font-size:13px}.map-gates>strong{flex-basis:100%;font-size:12px}.map-heading h2{font-size:26px}}
 @media print {
+  .mind-root button,.mind-topic,.mind-extra{display:flex!important}.project-mindmap{break-inside:avoid}.map-original{display:none}.map-gates{break-inside:avoid}
   .app {margin:0}.main {padding:0;max-width:none}.scene {padding:20px}.scene-head {padding-bottom:15px}
   .hero h1 {font-size:36px}.scenario-bar {padding:12px}.choice-column {display:none}
   .branch-layout {display:block}.month-detail,.route-step-detail {break-inside:avoid}
@@ -432,10 +466,26 @@ dialog::backdrop {background:#10254199;backdrop-filter:blur(2px)}
  <div class="sidebar-foot"><span class="tag">首次洽谈 · 讨论稿</span><p>从经营意图出发<br>按证据推进每一步</p><p>2026.09.27</p></div>
 </aside>
 <div class="app">
- <header class="topbar"><div class="crumb">LIAN BIJOUX PARIS <span aria-hidden="true"> / </span><span id="crumb">项目全貌</span></div><div class="toolbar"><button class="btn secondary" data-doc="plan">完整资料</button><button class="btn secondary" id="present">进入讲解模式</button></div></header>
+ <header class="topbar"><div class="crumb">LIAN BIJOUX PARIS <span aria-hidden="true"> / </span><span id="crumb">项目全貌</span></div><div class="toolbar"><button class="btn secondary" data-scene="0">思维导图</button><button class="btn secondary" data-doc="plan">完整资料</button><button class="btn secondary" id="present">进入讲解模式</button></div></header>
  <div class="scenario-bar" id="scenario-bar" hidden><div><span class="scenario-label">正在讨论</span><strong id="scenario-name"></strong><span class="scenario-draft">路线草案</span></div><button id="change-scenario">返回所选路线 ↗</button></div>
  <main class="main" id="main">
   <section class="scene" id="overview" aria-label="项目全貌">
+   <div class="scene-head map-heading"><div><div class="eyebrow">Project map / 项目全貌</div><h2>从现有库存，到一套能持续运营的体系。</h2><p class="lead">先明确经营条件，再建设和测试。点击分支，进入对应内容。</p></div><span class="tag proposal">六个月滚动规划</span></div>
+   <div class="project-mindmap" aria-label="项目思维导图：经营条件、执行工作与复盘闭环">
+    <div class="mind-root"><span>LIAN BIJOUX PARIS</span><strong>库存起步<br>验证持续经营</strong><p>先验证，再扩大投入</p><button data-scene="1">从初始洽谈开始 →</button></div>
+    <div class="mind-branches mind-left">
+     <article class="mind-node"><button class="mind-topic" data-scene="3"><span>01</span><strong>盘点历史与交接</strong><span aria-hidden="true">↗</span></button><ul><li>关键对接人、资料与账号</li><li>库存、成本、历史订单</li><li>收款、物流与现有素材</li></ul><button class="mind-extra" data-scene="2">查看现站诊断 →</button></article>
+     <article class="mind-node"><button class="mind-topic" data-scene="1"><span>02</span><strong>确定商品与市场</strong><span aria-hidden="true">↗</span></button><ul><li id="map-stock">商品范围待确认</li><li id="map-market">首发市场待确认</li><li>客户、竞品、定价与单笔贡献</li></ul></article>
+     <article class="mind-node"><button class="mind-topic" data-scene="6"><span>03</span><strong>明确预算与协作</strong><span aria-hidden="true">↗</span></button><ul><li>诊断、建设人力与广告分列</li><li>库存能否覆盖重启投入</li><li>执行团队、授权与费用结算</li></ul></article>
+    </div>
+    <div class="mind-branches mind-right">
+     <article class="mind-node"><button class="mind-topic" data-scene="4"><span>04</span><strong>建设首发成交体系</strong><span aria-hidden="true">↗</span></button><ul><li>A/B/C/D 小样 → 首发页面</li><li>商品命名、tag、SEO 与素材 SOP</li><li>支付、履约、追踪与接手验收</li></ul></article>
+     <article class="mind-node"><button class="mind-topic" data-scene="5"><span>05</span><strong>封顶测试与经营判断</strong><span aria-hidden="true">↗</span></button><ul><li>一个国家、主渠道、商品主张</li><li>单轮预算上限与真实订单</li><li>看贡献、现金与承接能力</li></ul></article>
+     <article class="mind-node"><button class="mind-topic" data-map-loop><span>06</span><strong>数据闭环与交接</strong><span aria-hidden="true">↗</span></button><ul><li>证据 → 判断 → 动作 → 复测</li><li>SOP、素材与决策版本留档</li><li>续作、调整或结束</li></ul><button class="mind-extra" data-scene="7">查看会谈待决事项 →</button></article>
+    </div>
+   </div>
+   <div class="map-gates" aria-label="按节点投入的执行顺序"><strong>投入顺序</strong><span>限额诊断</span><i aria-hidden="true">→</i><span>首发链路验收</span><i aria-hidden="true">→</i><span>单轮测试</span><i aria-hidden="true">→</i><span>补建／修正／停止</span></div>
+   <details class="map-original"><summary>展开原站画面与五步路线</summary>
    <div class="hero">
     <div><div class="eyebrow">A grounded operating trial</div><h1>从现有库存起步，<br>验证一条<br><em>可持续经营的路径。</em></h1><p class="intro">盘清商品与历史，补齐购买和运营基础，用试运营结果检验商品、渠道与经济性，再决定后续投入。</p><button class="btn" data-scene="1">确认试运营边界 <span aria-hidden="true">→</span></button></div>
     <figure class="hero-visual" style="margin:0"><div class="browser-mini"><i></i><i></i><i></i><span>lianbijouxparis.com</span></div><img class="hero-image" data-asset="01-home-desktop.png" alt="2026年9月27日网站首页实测截图"><figcaption class="hero-caption"><span>现站留档 · 本期按大改安排</span><span>2026.09.27 实测</span></figcaption></figure>
@@ -448,6 +498,7 @@ dialog::backdrop {background:#10254199;backdrop-filter:blur(2px)}
     <button data-scene="5"><span class="step">05</span><strong>验证调整</strong><small>测试、复盘、再投入</small></button>
    </div>
    <div class="status-line"><span><span class="tag verified">已核实</span> <b>公开网站主要路径</b></span><span><span class="tag pending">待确认</span> 库存货值、经营目标、预算与历史销售</span><span><span class="tag proposal">建议</span> 分阶段投入与验收</span></div>
+   </details>
   </section>
   <section class="scene active" id="discovery" aria-label="初始洽谈">
    <div class="scene-head"><div><div class="eyebrow">01 / Define the operating boundaries</div><h2>以现有库存试运营，先确认怎么做。</h2><p class="lead">先约定诊断范围与费用，再确认库存、首发市场和建设规模。</p></div><span class="tag pending">方案讨论 · 条款待确认</span></div>
@@ -664,6 +715,7 @@ function renderAdBudget(){const money=n=>'$'+n.toLocaleString('en-US');$('#ad-da
 
 function renderScenario(){
  const p=currentPlan(),v=p.variant,b=p.budget,m=marketPlan();
+ $('#map-stock').textContent=p.label;$('#map-market').textContent=m.label;
  $$('[data-market]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.market===selectedMarket)));
  $('#market-brief').innerHTML=`<div class="section-heading"><h3>首发市场：${m.label}</h3><p>${m.scope}</p></div><div class="market-grid"><div><span>调研边界</span><p>${m.research}</p></div><div><span>本地化建设</span><p>${m.local}</p></div><div><span>广告与资源</span><p>${m.ads}</p></div><div><span>启动条件</span><p>${m.gate}</p></div></div><button class="btn secondary" data-follow="1">回到洽谈调整市场范围 →</button>`;
  $('#ad-error').hidden=true;
@@ -701,6 +753,7 @@ $('#route-steps').addEventListener('keydown',e=>{const b=e.target.closest('[data
 $$('[data-market]').forEach(el=>el.addEventListener('click',()=>chooseMarket(el.dataset.market)));
 
 $('#ad-rounds').addEventListener('change',e=>{const n=Number(e.target.value),valid=Number.isInteger(n)&&n>=1&&n<=6;adRounds=valid?n:1;$('#ad-error').hidden=valid;$('#ad-error').textContent=valid?'':'测试轮数需为1–6的整数，已恢复为1轮。';renderAdBudget();syncLocation()});
+ $('[data-map-loop]').addEventListener('click',()=>{showScene(5);const target=$('#learning-loop h3');target.tabIndex=-1;target.focus({preventScroll:true});$('#learning-loop').scrollIntoView({block:'start',behavior:'instant'});});
 
 const base='https://lianbijouxparis.com';
 const evidence=[
